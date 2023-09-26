@@ -1,0 +1,63 @@
+[tool.ruff]
+line-length = 120
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # pyflakes
+    "F",
+    # django-special
+    "DJ",
+    # bugbear
+    "B",
+    #f8 -async
+    "ASYNC",
+    # f8-comprehensions
+    "C4",
+    # f8 return statement
+    "RET",
+    # f8 -trailing-comma
+    "COM",
+    #pep8-naming
+    "N",
+    # isort
+    "I001",
+    # ruff pyproject.toml
+    "RUF200",
+]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "migrations",
+    "manage.py",
+]
+ignore = ["E902"]
+fixable = ["ALL"]
+target-version = "py311"
+output-format = "grouped"
+
+[tool.ruff.isort]
+known-first-party = ["app"]
+section-order = ["future", "standard-library", "django", "third-party", "first-party", "local-folder",]
+split-on-trailing-comma = true
+[tool.ruff.isort.sections]
+"django" = ["django"]

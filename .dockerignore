@@ -1,0 +1,10 @@
+*
+!app
+**/migrations/*.py
+!*/migrations/__init__.py
+!larixon_test
+!db_health_check.sh
+!requirements.txt
+!start.sh
+!manage.py
+!db.json

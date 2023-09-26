@@ -1,0 +1,106 @@
+[
+{
+  "model": "app.category",
+  "pk": 1,
+  "fields": {
+    "name": "Phones"
+  }
+},
+{
+  "model": "app.category",
+  "pk": 2,
+  "fields": {
+    "name": "Laptop"
+  }
+},
+{
+  "model": "app.category",
+  "pk": 3,
+  "fields": {
+    "name": "Tickets"
+  }
+},
+{
+  "model": "app.category",
+  "pk": 4,
+  "fields": {
+    "name": "Gadgets"
+  }
+},
+{
+  "model": "app.category",
+  "pk": 5,
+  "fields": {
+    "name": "Smart watches"
+  }
+},
+{
+  "model": "app.category",
+  "pk": 6,
+  "fields": {
+    "name": "Apple"
+  }
+},
+{
+  "model": "app.city",
+  "pk": 1,
+  "fields": {
+    "name": "Moscow"
+  }
+},
+{
+  "model": "app.city",
+  "pk": 2,
+  "fields": {
+    "name": "Minsk"
+  }
+},
+{
+  "model": "app.city",
+  "pk": 3,
+  "fields": {
+    "name": "London"
+  }
+},
+{
+  "model": "app.city",
+  "pk": 4,
+  "fields": {
+    "name": "Berlin"
+  }
+},
+{
+  "model": "app.advert",
+  "pk": 1,
+  "fields": {
+    "title": "Продам Айфон 15",
+    "description": "новый оригинал",
+    "city": 1,
+    "views": 5,
+    "created_at": "2023-09-26T07:50:42.754Z",
+    "category": [
+      1,
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "app.advert",
+  "pk": 2,
+  "fields": {
+    "title": "Техника Apple",
+    "description": "всё оригинал",
+    "city": 2,
+    "views": 0,
+    "created_at": "2023-09-26T07:50:42.754Z",
+    "category": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ]
+  }
+}
+]
